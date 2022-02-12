@@ -4,7 +4,7 @@
 
 This note-taking application is an task-management tool that enables a user to write and save notes. 
 
-You may view the deployed application [clicking this link](https://tresha-gaye.github.io/note-taker/).
+You may view the deployed application [clicking this link](https://immense-ravine-67266.herokuapp.com/).
 
 **Technologies** 
 
@@ -17,9 +17,12 @@ The application was created by Node JS and the following NPM packages: `Express`
 - When the user clicks on an existing note in the list in the left-hand column, that note appears in the right-hand column
 - When the user clicks on the `Write` icon (the '+' symbol) icon in the navigation at the top of the page, then the empty fields reappear and the user can enter a new note title and note text in the right-hand column.
 
-**Below are a screenshots of the app showing the functionality:**
+**Below are screenshots of the app showing the functionality:**
+
+![Note Taker homepage](./public/assets/images/notehome.jpg)  
 
 ![Creating a new note](./public/assets/images/notepage1.jpg)  
+
 
 **Challenges**
 
