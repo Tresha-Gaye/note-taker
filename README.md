@@ -2,11 +2,11 @@
 
 ## Description
 
-This note-taking application enables a user to write and save notes to keep organized and on-task. 
+This note-taking application is an task-management tool that enables a user to write and save notes. 
 
 You may view the deployed application [clicking this link](https://tresha-gaye.github.io/note-taker/).
 
-**Technologies**  
+**Technologies** 
 
 The application was created by Node JS and the following NPM packages: `Express` and `Uniqid`. The application uses a db.json file on the back end that stores and retrieves notes using the `fs` module.
 
@@ -19,31 +19,11 @@ The application was created by Node JS and the following NPM packages: `Express`
 
 **Below are a screenshots of the app showing the functionality:**
 
-![Creating a new note](.public/assets/images/noptepage1.jpg)  
+![Creating a new note](./public/assets/images/notepage1.jpg)  
 
+**Challenges**
 
-
-Getting Started
-
-
-The following HTML routes should be created:
-
-GET /notes should return the notes.html file.
-
-GET * should return the index.html file.
-
-The following API routes should be created:
-
-GET /api/notes should read the db.json file and return all saved notes as JSON.
-
-POST /api/notes should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
-
-** Challenges **
-You haven’t learned how to handle DELETE requests, but this application has that functionality in the front end. As a bonus, see if you can add the DELETE route to the application using the following guideline:
-
-DELETE /api/notes/:id should receive a query parameter containing the id of a note to delete. In order to delete a note, you'll need to read all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file.
-
-
+The most challenging aspect of the application was the delete feature using the app.delete route. While the notes were successfully deleted from the db.json file, the functionality did not extend to the front-end. T results was that deleted notes persisted on the front end until the server was restarted and the browser refreshed. This will be improved upon in version 1.1 so that the user will be able to delete saved notes and have the browser refresh immediately without the deleted.
 
 ## Contributing
 
@@ -52,10 +32,10 @@ DELETE /api/notes/:id should receive a query parameter containing the id of a no
 ## Credits
 
 **The following resources were used to complete this project:**
-1. UCONN Coding Bootcamp's modules on Javascript and Node JS
-2. README Guide [How to create a Professional README](./readme-guide.md)
-3. [NodeJs](https://nodejs.org/api/modules.html) Documentation 
-4. [Inquirer](https://www.npmjs.com/package/inquirer/v/8.2.0) Documentation 
+1. UCONN Coding Bootcamp's modules on Express.js and Node JS
+2. [NodeJs](https://nodejs.org/api/modules.html) Documentation 
+3. [Express](https://www.npmjs.com/package/express) Documentation 
+4. [Uniqid](https://www.npmjs.com/package/uniqid) Documentation
 
 ## License
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
